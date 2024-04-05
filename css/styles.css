@@ -98,10 +98,14 @@ span {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   display: flex;
-  align-items: center;
   margin-right: 76px;
 }
 
+@media only screen and (min-width: 768px) {
+  .logo {
+    justify-content: left;
+  }
+}
 .header-logo-studio {
   color: #2e2f42;
 }
@@ -838,7 +842,7 @@ span {
 .footer-social-media-container {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
+  margin-bottom: 0;
 }
 
 .footer-social-media-list {
@@ -846,8 +850,13 @@ span {
   gap: 16px;
 }
 
-.footer-logo-container {
-  margin-bottom: 72px;
+@media only screen and (max-width: 1157px) {
+  .footer-social-media-list {
+    margin-bottom: 72px;
+  }
+  .page-footer-text {
+    margin-bottom: 72px;
+  }
 }
 
 .social-media-text {
@@ -893,7 +902,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 1157px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
     max-width: 584px;
   }
